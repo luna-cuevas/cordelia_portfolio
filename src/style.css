@@ -9,6 +9,18 @@ body {
 	cursor: url('/src/images/like2.png'), auto;
 }
 
+footer {
+	width: auto;
+	height: 40px;
+	background-color: #62278542;
+	/* color: white; */
+	font-size: 20px;
+	padding-top: 5px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
 h1 {
 	font-size: 70px;
 }
@@ -16,6 +28,11 @@ h1 {
 h2 {
 	font-size: 50px;
 	margin: 0;
+}
+
+a:visited {
+	text-decoration: none;
+	color: rgb(189, 53, 231);
 }
 
 @font-face { font-family: Magic Funk; src: url('/src/Magic\ Funk.ttf'); }
@@ -28,22 +45,23 @@ h2 {
 	justify-content: center;
 }
   
-  .topnav a {
-	padding: 30px;
-	/* font-size: 17px; */
-  }
-  
-  .topnav a:hover {
-	background-color: #fcabf1b6;
-  }
-  
-  .topnav .icon {
-	display: none;
-  }
+.topnav a {
+padding: 30px;
+/* font-size: 17px; */
+}
 
-  .fa-home {
-	font-size: 3em;
-	color: #a637c2;
+.topnav a:hover {
+background-color: #fcabf1b6;
+}
+
+.topnav .icon {
+display: none;
+
+}
+
+.fa-home {
+font-size: 3em;
+color: #a637c2;
 }
 
 .fa-tiktok {
@@ -56,32 +74,14 @@ h2 {
 	color: #a637c2;
 }
 
+.fa-bars {
+	color: #a637c2;
+}
+.fa-eye {
+	color: #902fa8;
+}
+
          /*  -----------------------Main Splash Page Section----------------------- */
-
-/* .gif-moon {
-	position: absolute;
-	margin-top: 20vh;
-	margin-left: 16vh;
-}
-
-.gif-moon img {
-	width: 200px;
-	height: auto;
-}
-
-.gif-star {
-	position: absolute;
-	top: 30vh;
-	right: 14vh;
-}
-
-.gif-star img {
-	width: 200px;
-	height: auto;
-} */
-
-
-
 
 .hero-area {
 	display: flex;
@@ -225,8 +225,12 @@ h2 {
 
 
 /* Tik Tok Page */
+
+
 .tik-tok-container {
-	height: 100vh;
+	margin: 0;
+	padding: 0;
+	height: auto;
 	overflow-y: scroll;
 	background-image: url("/src/images/pastel-pixel-gif-12.gif");
 	background-size:100% 100%;
@@ -246,22 +250,18 @@ h2 {
 	justify-content: center;
 	text-align: center;
 }
-
-
  
 .carousel-item {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
-
-
 .carousel-control-prev-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23490a36' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a11076' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
 
 .carousel-control-next-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23490a36' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23a11076' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -278,17 +278,12 @@ h2 {
 	background-color:#640f4b !important;
 	color: #490a36;
 }
-
-
 .carousel-indicators .active {
     background-color: #ff1de1!important;
 }
-
 .product-card-media {
 	width: 420px;
 	height: 600px;
-	/* background-image: url('/src/images/pastel-heart.txt'); */
-	background-size:140% 100%;
 	background: linear-gradient(rgba(251, 222, 255, 0.527), rgba(211, 136, 221, 0.801));
 	border-radius: 60px 60px 10px 10px;
 	border: 5px solid rgba(251, 222, 255, 0.678);
@@ -296,7 +291,6 @@ h2 {
 	box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
 
 }
-
 .performance-text {
 	display: block;
 	margin-left: auto;
@@ -321,8 +315,7 @@ h2 {
 /* Skating Page */
 
 .skating-container {
-	height: 100vh;
-	overflow-y: scroll;
+	height: auto;
 	background-image: url("/src/images/pastel-pixel-gif-12.gif");
 	background-size:100% 100%;
 }
@@ -370,7 +363,7 @@ h2 {
 	}
 	.topnav a {
 		display: block;
-		color: #eda4ff !important;
+		color:transparent !important;
 		font-size: 17px;
 		padding: 20px 10px;
 	}
@@ -392,15 +385,33 @@ h2 {
 	.topnav.responsive a {
 	  display: flex;
 	}
-	/* .product-card-media {
-		width: 380px;
-		height: 520px;
-	} */
 	.tik-tok-container {
-		height: 100vh;
+		height: auto;
 		background-color: #b7ffddd8;
-		overflow-y: auto;
-		background-image: linear-gradient(rgb(227, 181, 233), rgb(127, 198, 207))
+		overflow-y: scroll;
+		background-image: linear-gradient(rgb(255, 222, 251), rgb(227, 181, 233))
+	}
+	.product-card-media {
+		width: 375px;
+		margin-left: auto;
+		margin-right: auto;
+		background: linear-gradient(rgba(251, 222, 255, 0.527), rgba(211, 136, 221, 0.801));
+		border-radius: 60px 60px 10px 10px;
+		border: 5px solid rgba(251, 222, 255, 0.678);
+		-webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+	}
+	.performance-text {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 365px;
+		font-size: 28px;
+		background-color: rgba(211, 136, 221, 0.534);
+		color: white;
+		border: 5px solid rgba(251, 222, 255, 0.774);
+		border-radius: 10px 10px 30px 30px;
+		/* -webkit-text-stroke: 1px #db89f0; */
 	}
 	.about-me-section {
 		overflow-x: hidden;
@@ -440,7 +451,8 @@ h2 {
 
 	.skating-container {
 		height: 100vh;
-		background-color: #b7ffddd8;
+		background-image: linear-gradient(rgb(255, 222, 251), rgb(227, 181, 233))
+
 	}
 	#prev-btn {
 		left: 1px;
@@ -479,7 +491,7 @@ h2 {
 	.hero-text h1 {
 		font-size: 80px;
 		-webkit-text-stroke: 2px #eda4ff;
-
+		letter-spacing: 4px;
 	}
 	.hero-text p {
 		font-size: 30px;
@@ -530,14 +542,4 @@ h2 {
 	#next-btn {
 		right: 20rem;
 	}
-}
-
-
-  @media screen and (max-width: 1200px) {
-	/* .gif-moon {
-		display: none;
-	}
-	.gif-star {
-		display: none;
-	} */
 }
