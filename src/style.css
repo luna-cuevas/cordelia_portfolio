@@ -5,7 +5,7 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 	cursor: url('/src/images/like2.png'), auto;
 }
 
@@ -38,7 +38,6 @@ a:visited {
 @font-face { font-family: Magic Funk; src: url('/src/Magic\ Funk.ttf'); }
 @font-face { font-family: Groovin; src: url('/src/Groovin.ttf'); }
 
-
 .topnav {
 	display: flex;
 	text-align: center;  
@@ -60,8 +59,8 @@ display: none;
 }
 
 .fa-home {
-font-size: 3em;
-color: #a637c2;
+	font-size: 3em;
+	color: #a637c2;
 }
 
 .fa-tiktok {
@@ -370,9 +369,9 @@ color: #a637c2;
 
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
-	  display:block;
-	  font-size: 25px;
-	  padding-top: 30px;
+		display:block;
+		font-size: 25px;
+		padding-top: 30px;
 	}
 
 	.topnav.responsive {
