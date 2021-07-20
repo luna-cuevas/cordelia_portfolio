@@ -1,11 +1,14 @@
 @font-face { font-family: Magic Funk; src: url('/src/Magic\ Funk.ttf'); }
 @font-face { font-family: Groovin; src: url('/src/Groovin.ttf'); }
 
-body {
+html {
 	overflow-x: hidden;
+	overflow-y: auto !important;
+}
+body {
+	overflow-y: auto !important;
 	background: linear-gradient(#caffe6, #cadbff, #e8c4fd);
 	font-family: Righteous, sans-serif;
-	height: auto;
 	margin: 0;
 	padding: 0;
 	cursor: url('/src/images/like2.png'), auto;
@@ -44,16 +47,15 @@ a:visited {
 }
   
 .topnav a {
-padding: 30px;
-/* font-size: 17px; */
+	padding: 30px;
 }
 
 .topnav a:hover {
-background-color: #fcabf1b6;
+	background-color: #fcabf1b6;
 }
 
 .topnav .icon {
-display: none;
+	display: none;
 
 }
 
@@ -81,28 +83,30 @@ display: none;
 
          /*  -----------------------Main Splash Page Section----------------------- */
 
+.hero {
+	height: 100vh;
+}
 .hero-area {
+	overflow-y: scroll !important;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	height: auto;
 }
 
 .hero-text h1 {
 	font-family: Groovin;
 	color: #a637c2;
-	-webkit-text-stroke: 1px #eda4ff;
-	letter-spacing: 6px;
-	font-size: 120px;
+	-webkit-text-stroke: 0.063rem #eda4ff;
+	letter-spacing: 0.375rem;
+	font-size: 7.5rem;
 }
 
 .hero-text p {
-	font-size: 50px;
+	font-size: 3.125rem;
 	font-family: lobster;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: #ffd5f9;
+	-webkit-text-stroke: 0.063rem #ffd5f9;
 	color: #d847fc;
 }
 
@@ -113,14 +117,12 @@ display: none;
 
 .button {
 	font-family: Righteous;
-	font-size: 40px;
+	font-size: 2.5rem;
 	width: 175px;
-	height: 50px;
-	border-radius: 25px;
+	height: 6.5vh;
+	border-radius: 1.5rem;
 	background-color: #a637c2;
 	text-align: center;
-	margin-top: 40px;
-
 }
 
 .button:hover {
@@ -137,43 +139,42 @@ display: none;
 
 .about-me-section {
 	height: auto;
-	font-size: 30px;
-	margin: 100px;
+	font-size: 1.875rem;
+	margin: auto;
 }
-
 
 .wrapper {
 	display: flex;
-	text-align: center;
+	text-align: left;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	gap: 100px;
+	padding-top: 1.875rem;
+	padding-bottom: 1.875rem;
+	gap: 6.25rem;
 }
 
 .headshot {
-	width: 300px;
-	height: 100%;
+	max-width: 20vw;
+	height: auto;
 	border-radius: 50%;
 }
 
 .info {
 	margin: 20px;
-	width: 550px;
+	width: 38.4vw;
 }
 
 .info h2 {
+	text-align: center;
 	color: #a637c2;
 	-webkit-text-stroke: 1px #eda4ff;
 }
 .info p {
-	text-indent: 8%;
 	font-family: Josefin Sans;
 	color: #e91bab;
-	font-size: 25px;
-	line-height: 30px;
+	font-size: 1.563rem;
+	line-height: 1.875rem;
 }
 
          /*  -----------------------Main Page----------------------- */
@@ -188,7 +189,7 @@ display: none;
 	display: flex;
 	text-align: center;
 	flex-wrap: wrap;
-	padding-bottom: 50px;
+	padding-bottom: 3.125rem;
 	color: #fa4b9d;
 	-webkit-text-stroke: 1px #b511ca;
 }
@@ -198,21 +199,21 @@ display: none;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 40px;
+	padding: 2.5rem;
 }
 
 .project-left {
-	width: 600px;
+	width: 119vw;
 	text-align: center;
 	color: #a637c2;
-	-webkit-text-stroke: .1px #711a86;
+	-webkit-text-stroke: 1px #711a86;
 }
 
 .project-right {
 	font-family: Josefin Sans;
-	line-height: 30px;
-	font-size: 23px;
-	width: 600px;
+	line-height: 1.875rem;
+	font-size: 1.438rem;
+	width: 119vw;
 	text-align: center;
 	color: #e91bab;
 }
@@ -234,11 +235,11 @@ display: none;
 
 .title {
 	font-family: Groovin;
-	font-size: 60px;
-	letter-spacing: 5px;
+	font-size: 3.75rem;
+	letter-spacing: 0.313rem;
 	text-align: center;
 	color: #ba59c7;
-	-webkit-text-stroke: 2px #ffffffa9;
+	-webkit-text-stroke: 1px #ffffffa9;
 }
 
 .carousel {
@@ -344,23 +345,23 @@ display: none;
 	.topnav a {
 		display: block;
 		color:transparent !important;
-		font-size: 17px;
-		padding: 20px 10px;
+		font-size: 1rem;
+		padding: 1.25rem 0.75rem;
 	}
 
 	.topnav a:not(:first-child) {display: none;}
 	.topnav a.icon {
 		display:block;
-		font-size: 25px;
-		padding-top: 30px;
+		font-size: 1.5rem;
+		padding-top: 1.75rem;
 	}
 
 	.topnav.responsive {
 		position: relative;
 	}
 	.topnav.responsive a.icon {
-	  position: absolute;
-	  right: 0;
+		position: absolute;
+		right: 0;
 	}
 	.topnav.responsive a {
 	  display: flex;
@@ -473,16 +474,15 @@ display: none;
 		font-size: 30px;
 	}
 	.hero-area {
+		overflow-y: scroll !important;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		text-align: center;
-		height: auto;
 		margin-bottom: 5vh;
 	}
 	.hero {
-		height: 100%;
+		overflow-y: scroll !important;
 	}
 	.title {
 		padding-top: 40px;
