@@ -5,8 +5,15 @@
 }
 
 .projects-box {
-  width: 60%;
+  display: flex;
+  width: 20% !important;
   height: auto;
   margin: auto;
+  background-color: black;
   border: 1px solid white;
+}
+
+#caro {
+  margin: auto;
+  justify-content: center;
 }/*# sourceMappingURL=ProjectsStyle.css.map */

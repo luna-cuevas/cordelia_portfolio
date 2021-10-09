@@ -4,7 +4,7 @@ import { HamburgerEmphatic } from 'react-animated-burgers'
 import WebFont from 'webfontloader';
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
-import tiktok from './img/tiktok.svg'
+import tiktok from '../img/tiktok.svg'
 
 
 
