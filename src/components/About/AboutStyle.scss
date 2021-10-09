@@ -1,0 +1,46 @@
+.about-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.about-box {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.summary {
+  width: 50%;
+
+  img {
+    margin: 3%;
+    width: 30%;
+    height: auto;
+    float: left;
+  }
+}
+
+.skills {
+  width: 50%;
+}
+
+.skills-box {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.skill {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}

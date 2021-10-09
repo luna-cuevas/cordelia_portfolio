@@ -1,17 +1,19 @@
-$('.product-card-media').mouseover(function() {
-	var player = $('#' + this.id);
-	froogaloop = $f(player[0].id);
-	froogaloop.api('play');
-	player.mouseout(function() {
-		froogaloop.api('pause');
-	});
-});
+import react from "react";
+import './App.css'
+import Nav from './components/Nav/Nav'
+import Hero from './components/Hero/Hero'
+import About from './components/About/About'
+import Projects from './components/ProjectSection/Projects'
 
-function myFunction() {
-	var x = document.getElementById('myTopnav');
-	if (x.className === 'topnav') {
-		x.className += ' responsive';
-	} else {
-		x.className = 'topnav';
-	}
+function App() {
+  return (
+    <div>
+      <Nav />
+      <Hero />
+      <About />
+      <Projects />
+    </div>
+  );
 }
+
+export default App;

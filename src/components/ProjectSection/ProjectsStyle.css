@@ -1,0 +1,12 @@
+.projects-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.projects-box {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  border: 1px solid white;
+}/*# sourceMappingURL=ProjectsStyle.css.map */
