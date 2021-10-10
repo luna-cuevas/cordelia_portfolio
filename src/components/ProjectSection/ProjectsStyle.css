@@ -6,14 +6,32 @@
 
 .projects-box {
   display: flex;
-  width: 20% !important;
+  width: 80% !important;
   height: auto;
   margin: auto;
-  background-color: black;
-  border: 1px solid white;
+  background-color: rgba(213, 193, 230, 0.575);
+  border: 6px solid #535353;
 }
 
-#caro {
+.projects-text {
+  width: 50%;
+}
+
+.text1 {
+  margin: auto;
+  width: 80%;
+}
+
+.projects-video {
+  width: 30%;
+  height: 100%;
   margin: auto;
   justify-content: center;
+}
+
+.video {
+  margin: 10% !important;
+  width: auto !important;
+  margin: 1%;
+  height: 600px;
 }/*# sourceMappingURL=ProjectsStyle.css.map */
