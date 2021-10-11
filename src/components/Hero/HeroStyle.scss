@@ -1,6 +1,14 @@
+@font-face {
+  font-family: Groovin;
+  src: local("Groovin"), url(../misc./groovin.ttf) format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 .hero-container {
   display: flex;
-  height: 60vh;
+  position: relative;
+  height: 80vh;
   width: 100vw;
   justify-content: center;
 }
@@ -14,11 +22,13 @@
   text-align: center;
 
   h1 {
-    font-size: 4rem;
+    font-family: Groovin;
+    font-size: 6rem;
     letter-spacing: 0.375rem;
   }
 
   p {
+    font-family: Lobster;
     font-size: 2rem;
   }
 }

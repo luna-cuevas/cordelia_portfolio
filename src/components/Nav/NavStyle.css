@@ -1,18 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .Nav button {
   display: none;
   z-index: 99;
 }
 
 .Nav {
-  font-family: "Space Mono", sans-serif;
-  font-weight: 700;
   z-index: 999;
 }
 
 .pc-overlay {
   display: flex;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100vw;
   height: 20vh;
@@ -20,20 +19,20 @@
 }
 
 .pc-overlay a {
-  display: inline-block;
+  font-family: "Press Start 2P", cursive;
   padding: 1rem 1rem 1rem 1rem;
   margin: auto;
   text-decoration: none;
   border-bottom: 0.2rem solid black;
   transition-property: all 0.2s linear 0s;
-  font-size: 1.7rem;
+  font-size: 1.25rem;
   color: black;
-  text-align: center;
   z-index: 99;
 }
 
 .pc-overlay a:hover {
-  background-color: #b7b4b85d;
+  background-color: #dcfaec;
+  color: #df1e95;
   border-radius: 1rem;
   z-index: 99;
 }
@@ -60,8 +59,11 @@
 
 @media only screen and (max-width: 800px) {
   .Nav button {
-    display: block;
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: #cadbff;
+    width: 100vw;
     right: 0;
     top: 0;
   }
@@ -80,15 +82,16 @@
   }
 
   .mobile-overlay #hidden {
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     left: 0;
     top: 6vh;
     height: auto;
     width: 100%;
-    background-color: #0a0218;
+    background-color: #cadbff;
     border-radius: 10px;
+    z-index: 99;
   }
 
   .mobile-overlay #hidden a {
