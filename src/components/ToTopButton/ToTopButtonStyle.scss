@@ -1,0 +1,23 @@
+.svg {
+  filter: invert(63%) sepia(21%) saturate(2056%) hue-rotate(203deg)
+    brightness(96%) contrast(87%);
+  width: 3vw;
+  cursor: pointer !important;
+  position: fixed;
+  right: 10vw;
+  bottom: 10vh;
+  transform: translate(0, 0);
+  // color: #208bd3;
+}
+
+.svg img {
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .svg {
+    width: 7vw;
+    bottom: 10vh;
+    right: 0.5vw;
+  }
+}

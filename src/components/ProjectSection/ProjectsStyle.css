@@ -1,37 +1,199 @@
 .projects-container {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  height: 100%;
   width: 100vw;
+  margin: 20vh auto;
+}
+.projects-container h1 {
+  margin: auto;
+}
+.projects-container h1 img {
+  width: 4rem;
+  height: auto;
+  margin: auto 2vh;
+}
+.projects-container p {
+  font-size: 1.2rem;
+  color: #4d4d4d;
 }
 
 .projects-box {
+  position: relative;
   display: flex;
-  width: 80% !important;
+  width: 60% !important;
   height: auto;
-  margin: auto;
-  background-color: rgba(213, 193, 230, 0.575);
-  border: 6px solid #535353;
+  margin: 5vh auto;
+  padding: 3vw;
+  background-color: #fce8ff;
+  box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
 }
 
 .projects-text {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects-text h3 {
+  text-align: center;
 }
 
-.text1 {
-  margin: auto;
-  width: 80%;
+.projects-pinterest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 2vh;
+  width: 35% !important;
+  margin: 2vh auto;
+  padding: 2vh;
+  height: 100%;
+  background-color: #fee1ff;
+  box-shadow: -4px 0 0 0 #918fe6, 4px 0 0 0 #918fe6, 0 -4px 0 0 #918fe6, 0 4px 0 0 #918fe6;
+}
+.projects-pinterest h3 {
+  margin: 0;
+  padding: 0%;
 }
 
 .projects-video {
-  width: 30%;
+  width: 30% !important;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin: auto;
   justify-content: center;
+  gap: 2vh;
+  padding: 2vh !important;
+  background-color: #fee1ff;
+  box-shadow: -4px 0 0 0 #918fe6, 4px 0 0 0 #918fe6, 0 -4px 0 0 #918fe6, 0 4px 0 0 #918fe6;
+}
+.projects-video h3 {
+  margin: 0;
+  padding: 0%;
 }
 
 .video {
-  margin: 10% !important;
-  width: auto !important;
-  margin: 1%;
-  height: 600px;
+  margin: auto !important;
+  width: 100% !important;
+  height: 50vh !important;
+  padding: 2vh auto !important;
+}
+
+.carousel-indicators {
+  display: none !important;
+}
+
+.carousel-control-prev {
+  left: -20% !important;
+}
+
+.carousel-control-next {
+  right: -20% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+    margin: 10vh auto;
+  }
+  .projects-container h1 {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem !important;
+  }
+  .projects-container h1 img {
+    width: 3rem;
+    height: auto;
+    margin: auto;
+  }
+  .projects-container p {
+    font-size: 1rem;
+    color: #4d4d4d;
+  }
+
+  .projects-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80% !important;
+    height: auto;
+    margin: 5vh auto;
+    padding: 3vw;
+    background-color: #fce8ff;
+    box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+  }
+
+  .projects-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projects-text h3 {
+    text-align: center;
+  }
+
+  .projects-pinterest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2vh;
+    width: 100% !important;
+    margin: 2vh auto;
+    padding: 2vh;
+    height: 100%;
+    background-color: none;
+    box-shadow: none;
+  }
+  .projects-pinterest h3 {
+    margin: 0;
+    padding: 0%;
+  }
+
+  .projects-video {
+    width: 90% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    gap: 2vh;
+    padding: 2vh !important;
+    background-color: none;
+    box-shadow: none;
+  }
+  .projects-video h3 {
+    margin: 0;
+    padding: 0%;
+  }
+
+  .video {
+    margin: auto !important;
+    width: 100% !important;
+    height: 50vh !important;
+    padding: 2vh auto !important;
+  }
+
+  .carousel-indicators {
+    display: none !important;
+  }
+
+  .carousel-control-prev {
+    left: -18% !important;
+  }
+
+  .carousel-control-next {
+    right: -18% !important;
+  }
 }/*# sourceMappingURL=ProjectsStyle.css.map */

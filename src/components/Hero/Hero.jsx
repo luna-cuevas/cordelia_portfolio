@@ -3,11 +3,11 @@ import './HeroStyle.css'
 
 const Hero = () => {
     return (
-        <div className='hero-container'>
+        <div className='hero-container' id='top'>
             <div className='hero-text'>
-                <h1>
+                <span className='hero-title'>
                     Brooke Cordelia Harvey
-                </h1>
+                </span>
                 <p>Content Creator • Stylist •
                     Roller Skater • Aesthetic Curator</p>
             </div>

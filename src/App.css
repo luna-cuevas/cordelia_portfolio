@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 body {
   height: auto;
-  background: linear-gradient(#caffe6, #cadbff, #e8c4fd);
+  background: linear-gradient(to bottom, #e6fff4, #e0eaff, #f6e7ff);
+}
+
+h1 {
+  font-size: 2rem !important;
+  margin: 3vh auto !important;
+  font-family: "Press Start 2P", cursive;
+  color: #686868;
+}
+
+button {
+  border-radius: 10px !important;
+  border: 4px solid #918fe6;
+  background-color: #d6d5f1;
+  color: black;
+  font-family: "Righteous", cursive;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=App.css.map */

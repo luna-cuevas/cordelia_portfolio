@@ -12,10 +12,10 @@
 .pc-overlay {
   display: flex;
   margin: auto;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 20vh;
+  width: 80%;
+  height: 15vh;
   z-index: 99;
 }
 
@@ -26,14 +26,14 @@
   text-decoration: none;
   border-bottom: 0.2rem solid rgb(0, 0, 0);
   transition-property: all 0.2s linear 0s;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: rgb(0, 0, 0);
   z-index: 99;
 }
 
 .pc-overlay a:hover {
-  background-color: #dcfaec;
-  color: rgb(223, 30, 149);
+  background-color: #e2fff1;
+  color: rgb(145, 143, 230);
   border-radius: 1rem;
   z-index: 99;
 }
@@ -50,12 +50,41 @@
   display: none;
 }
 
-.sideBar {
-  display: flex;
-  flex-direction: column;
+.dropdown,
+.dropdown2 {
+  position: relative;
+}
+
+.dropdown-content,
+.dropdown-content2 {
+  display: none;
   position: absolute;
-  left: 2vw;
-  bottom: 5vh;
+  top: 108%;
+  left: 0;
+  background-color: #e6fff4;
+  border-left: 0.2rem solid black;
+  border-right: 0.2rem solid black;
+  width: auto;
+  z-index: 1;
+}
+
+.dropdown-content a,
+.dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  font-size: 0.8rem !important;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e2fff1;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown2:hover .dropdown-content2 {
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
@@ -63,10 +92,11 @@
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    background-color: #cadbff;
-    width: 100vw;
+    background-color: transparent;
+    width: auto;
     right: 0;
     top: 0;
+    z-index: 999999999;
   }
 
   .pc-overlay {
@@ -74,39 +104,113 @@
   }
 
   .mobile-overlay {
-    display: block;
+    display: flex;
     z-index: 9999;
+    transition: height 3s linear;
+  }
+
+  .mobile-overlay-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 80vw;
   }
 
   .mobile-overlay #not {
     display: none;
+    visibility: hidden;
   }
 
   .mobile-overlay #hidden {
     position: fixed;
+    visibility: visible;
     display: flex;
-    flex-direction: column;
-    left: 0;
-    top: 6vh;
+    margin: auto;
     height: auto;
-    width: 100%;
-    background-color: #cadbff;
-    border-radius: 10px;
-    z-index: 99;
+    width: 100vw !important;
+    background-color: rgb(202, 201, 250);
+    border-radius: 0 !important;
+    transition: height 5s linear;
+    z-index: 9999999;
   }
 
   .mobile-overlay #hidden a {
-    display: block;
-    font-size: 2rem;
+    display: flex;
+    margin: 5vh auto 2vh auto;
+    font-size: 1rem;
     color: #000000;
     text-decoration: none;
-    width: auto;
-    margin: auto;
-    padding: 10px;
+    font-family: "Press Start 2P", cursive;
+
+    z-index: 9999;
   }
-  .socials {
+  .pages {
     display: flex;
-    width: 50%;
-    margin: auto;
+  }
+
+  .dropdown,
+  .dropdown2,
+  .dropdown3 {
+    position: relative;
+  }
+
+  .dropdown-content,
+  .dropdown-content2 {
+    background-color: rgb(197, 196, 255);
+    display: none;
+    position: absolute;
+    top: 160%;
+    left: -5%;
+    border-left: 0.2rem solid black;
+    border-right: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    width: auto;
+    z-index: 1;
+  }
+
+  .dropdown-content3 {
+    background-color: rgb(197, 196, 255);
+    display: none;
+    position: absolute;
+    top: 160%;
+    left: 30%;
+    border-left: 0.2rem solid black;
+    border-right: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    z-index: 1;
+  }
+
+  .dropdown-content a,
+  .dropdown-content2 a {
+    color: black;
+    padding: 0 !important;
+    margin: 1rem auto !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+    text-decoration: none;
+    display: flex !important;
+  }
+
+  .dropdown-content3 a {
+    color: black;
+    padding: 0 !important;
+    margin: 1rem auto !important;
+    font-size: 0.8rem !important;
+    text-align: center !important;
+    text-decoration: none;
+    display: flex !important;
+  }
+
+  .dropdown-content a:hover,
+  .dropdown-content2 a:hover,
+  .dropdown-content3 a:hover {
+    background-color: rgb(218, 218, 255);
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdown2:hover .dropdown-content2,
+  .dropdown3:hover .dropdown-content3 {
+    display: block;
   }
 }

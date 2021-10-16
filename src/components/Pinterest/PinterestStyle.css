@@ -1,0 +1,53 @@
+.pintrest-container {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+}
+
+.pintrest-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+}
+
+.pintrest-board {
+  height: auto;
+  width: 40%;
+  margin: 5vh;
+  padding: 2vh;
+  text-align: center;
+  background-color: #fee1ff;
+  box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+}
+
+.raver {
+  background: linear-gradient(#d8e7ff, #e2d5fa);
+}
+
+.goth {
+  background: linear-gradient(lightgray, #5c5c5c);
+}
+
+@media screen and (max-width: 768px) {
+  .pintrest-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10vh auto;
+  }
+
+  .pintrest-board {
+    height: auto;
+    width: 100%;
+    margin: 5vh;
+    padding: 0;
+    text-align: center;
+    background-color: #fee1ff;
+    box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+  }
+}/*# sourceMappingURL=PinterestStyle.css.map */
