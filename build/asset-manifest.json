@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.16c2fc85.chunk.css",
+    "main.js": "/static/js/main.5f766aec.chunk.js",
+    "main.js.map": "/static/js/main.5f766aec.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2fbab824.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2fbab824.js.map",
+    "static/css/2.df20a7f0.chunk.css": "/static/css/2.df20a7f0.chunk.css",
+    "static/js/2.3835ca1b.chunk.js": "/static/js/2.3835ca1b.chunk.js",
+    "static/js/2.3835ca1b.chunk.js.map": "/static/js/2.3835ca1b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.df20a7f0.chunk.css.map": "/static/css/2.df20a7f0.chunk.css.map",
+    "static/css/main.16c2fc85.chunk.css.map": "/static/css/main.16c2fc85.chunk.css.map",
+    "static/js/2.3835ca1b.chunk.js.LICENSE.txt": "/static/js/2.3835ca1b.chunk.js.LICENSE.txt",
+    "static/media/Cordelia-Headshot.b9de783a.png": "/static/media/Cordelia-Headshot.b9de783a.png",
+    "static/media/HeroStyle.css": "/static/media/groovin.cbfdc586.ttf",
+    "static/media/rollerskates.cedcf001.gif": "/static/media/rollerskates.cedcf001.gif",
+    "static/media/rollerskates2.64336fe6.gif": "/static/media/rollerskates2.64336fe6.gif",
+    "static/media/sailormoon2.4e7248fa.gif": "/static/media/sailormoon2.4e7248fa.gif",
+    "static/media/sailormoon3.dac90073.gif": "/static/media/sailormoon3.dac90073.gif",
+    "static/media/sailorstaff.ddd14ddb.gif": "/static/media/sailorstaff.ddd14ddb.gif",
+    "static/media/tiktok.49fc73ba.svg": "/static/media/tiktok.49fc73ba.svg",
+    "static/media/upbutton.77c937cc.svg": "/static/media/upbutton.77c937cc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2fbab824.js",
+    "static/css/2.df20a7f0.chunk.css",
+    "static/js/2.3835ca1b.chunk.js",
+    "static/css/main.16c2fc85.chunk.css",
+    "static/js/main.5f766aec.chunk.js"
+  ]
+}
