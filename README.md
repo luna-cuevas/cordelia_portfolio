@@ -1,18 +1,70 @@
-# Cordelia_Portfolio
+# Getting Started with Create React App
 
-The purpose of this project was to build a robust portfolio for Cordelia, one of my friends and first client.
-She requested that the website feature 80s themes like bubbly text, strong pastel colors, and an emphasis on video content. The first iteration of the website did not feature a lot of movement and would be best described as barebones. But with some css styling and a bit of bootstrap, the website began to take shape. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The biggest hurdles that were presented were finding a way to ensure the website looked just as good on mobile as it does on a bigger screen. Media queries were heavily used along with flexbox and grid layouts.
+## Available Scripts
 
-After about a week of wrangling with finding out the best way to give the video content some movement, I found a few JS libraries that would allow a used to play video content by hovering over. I also managed to use one of w3s image slider concepts to have the videos auto cycle like a slideshow. 
+In the project directory, you can run:
 
-Overall, the project still needs some code refactoring which is what I'm working on now. 
+### `npm start`
 
-Things I aim to change:
-	- Though the media queries do help maintain the responsiveness of the website, I feel like I can use vh and vw units to rely less on queries and cut down on css 		bloat.
-	- I should definitely ensure that there are two versions of the pages so that the web version looks more like an image gallery.
-	- Maybe instead of using smaller js libraries, I think I'll use gsap instead to ensure future functions.
-	- I need to ensure accesibility features are added!
-	
-This being my first project, I learned a whole lot about css responsiveness, and JS libraries. 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
