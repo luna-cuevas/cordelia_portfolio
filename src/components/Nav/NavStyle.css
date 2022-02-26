@@ -24,7 +24,7 @@
   margin: auto;
   text-decoration: none;
   border-bottom: 0.2rem solid black;
-  transition-property: all 0.2s linear 0s;
+  transition: all 0.2s;
   font-size: 1.2rem;
   color: black;
   z-index: 99;
@@ -117,25 +117,39 @@
   }
 
   .mobile-overlay #not {
-    display: none;
-    visibility: hidden;
+    position: fixed;
+    right: -100%;
+    transition: right 0.2s linear;
+    background-color: #cac9fa;
+  }
+
+  .mobile-overlay #not a {
+    display: flex;
+    transition: right 0.2s linear;
+    margin: 5vh auto 2vh auto;
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Press Start 2P", cursive;
+    z-index: 9999;
   }
 
   .mobile-overlay #hidden {
     position: fixed;
-    visibility: visible;
     display: flex;
     margin: auto;
-    height: auto;
+    right: 0;
+    height: 10%;
     width: 100vw !important;
     background-color: #cac9fa;
     border-radius: 0 !important;
-    transition: height 5s linear;
+    transition: right 0.2s linear;
     z-index: 9999999;
   }
 
   .mobile-overlay #hidden a {
     display: flex;
+    transition: right 0.2s linear;
     margin: 5vh auto 2vh auto;
     font-size: 1rem;
     color: #000000;

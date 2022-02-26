@@ -21,6 +21,7 @@
 .projects-box {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 60% !important;
   height: auto;
   margin: 5vh auto;
@@ -30,13 +31,20 @@
 }
 
 .projects-text {
-  width: 50%;
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .projects-text h3 {
   text-align: center;
+}
+
+.pinterest-boards {
+  display: flex;
+  width: auto;
+  height: auto;
+  gap: 30px;
 }
 
 .projects-pinterest {
@@ -46,12 +54,12 @@
   text-align: center;
   justify-content: center;
   gap: 2vh;
-  width: 35% !important;
-  margin: 2vh auto;
+  width: 50% !important;
   padding: 2vh;
   height: 100%;
-  background-color: #fee1ff;
-  box-shadow: -4px 0 0 0 #918fe6, 4px 0 0 0 #918fe6, 0 -4px 0 0 #918fe6, 0 4px 0 0 #918fe6;
+  background-color: #fed5ff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #fbbbfc;
 }
 .projects-pinterest h3 {
   margin: 0;
@@ -59,7 +67,7 @@
 }
 
 .projects-video {
-  width: 30% !important;
+  width: 40% !important;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -68,8 +76,9 @@
   justify-content: center;
   gap: 2vh;
   padding: 2vh !important;
-  background-color: #fee1ff;
-  box-shadow: -4px 0 0 0 #918fe6, 4px 0 0 0 #918fe6, 0 -4px 0 0 #918fe6, 0 4px 0 0 #918fe6;
+  background-color: #fed5ff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #fbbbfc;
 }
 .projects-video h3 {
   margin: 0;
@@ -79,8 +88,7 @@
 .video {
   margin: auto !important;
   width: 100% !important;
-  height: 50vh !important;
-  padding: 2vh auto !important;
+  height: 500px !important;
 }
 
 .carousel-indicators {

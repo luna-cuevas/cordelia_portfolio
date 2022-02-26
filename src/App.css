@@ -13,10 +13,15 @@ h1 {
 }
 
 button {
-  border-radius: 10px !important;
   border: 4px solid #918fe6;
   background-color: #d6d5f1;
   color: black;
   font-family: "Righteous", cursive;
   font-size: 1.1rem;
-}/*# sourceMappingURL=App.css.map */
+}
+.button:hover {
+  background-image: rgb(251, 187, 252);
+  box-shadow: 5px 5px 0 rgb(243, 124, 245);
+  transition: box-shadow 0.25s;
+}
+/*# sourceMappingURL=App.css.map */
