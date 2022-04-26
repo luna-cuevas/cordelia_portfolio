@@ -26,12 +26,15 @@ const Videos = () => {
     return (
         <div className='videos-container'>
             <div className='videos-box'>
+                <div>
+                    
+                </div>
                 <div id='video1' >
                     <ModalVideo  
                         channel='vimeo' 
                         autoplay='true' 
                         isOpen={openModal[1]} 
-                        videoId="534212388" 
+                        videoId="682682632" 
                         onClose={() => setOpenModal(false)} />
                     <ReactPlayer 
                         playing={playVid[1]}
@@ -39,7 +42,7 @@ const Videos = () => {
                         muted 
                         loop
                         className="d-block w-100" 
-                        url='https://vimeo.com/534212388?autoplay=1' />
+                        url='https://d2630w7qpp1afw.cloudfront.net/goth+(Original).mp4' />
                     <button 
                         id='btn-overlay' 
                         onClick={()=> toggleModal(1)}
@@ -94,7 +97,7 @@ const Videos = () => {
                         channel='vimeo' 
                         autoplay='true' 
                         isOpen={openModal[4]} 
-                        videoId="534212582" 
+                        videoId="682683407" 
                         onClose={() => setOpenModal(false)} />
                     <ReactPlayer
                         playing={playVid[4]} 
@@ -102,7 +105,7 @@ const Videos = () => {
                         muted  
                         loop
                         className="d-block w-100" 
-                        url='https://vimeo.com/534212582' />
+                        url='https://vimeo.com/682683407' />
                     <button 
                         id='btn-overlay' 
                         onClick={()=> toggleModal(4)}
@@ -115,7 +118,7 @@ const Videos = () => {
                         channel='vimeo' 
                         autoplay='true' 
                         isOpen={openModal[5]} 
-                        videoId="553040222" 
+                        videoId="682683831" 
                         onClose={() => setOpenModal(false)} />
                     <ReactPlayer
                         playing={playVid[5]} 
@@ -123,7 +126,7 @@ const Videos = () => {
                         muted  
                         loop
                         className="d-block w-100" 
-                        url='https://vimeo.com/553040222' />
+                        url='https://vimeo.com/682683831' />
                     <button 
                         id='btn-overlay' 
                         onClick={()=> toggleModal(5)}
@@ -136,7 +139,7 @@ const Videos = () => {
                         channel='vimeo' 
                         autoplay='true' 
                         isOpen={openModal[6]} 
-                        videoId="553040181" 
+                        videoId="682684157" 
                         onClose={() => setOpenModal(false)} />
                     <ReactPlayer
                         playing={playVid[6]} 
@@ -144,7 +147,7 @@ const Videos = () => {
                         muted  
                         loop
                         className="d-block w-100" 
-                        url='https://vimeo.com/553040181' />
+                        url='https://vimeo.com/682684157' />
                     <button 
                         id='btn-overlay' 
                         onClick={()=> toggleModal(6)}
@@ -262,7 +265,7 @@ const Videos = () => {
                         channel='vimeo' 
                         autoplay='true' 
                         isOpen={openModal[12]} 
-                        videoId="534212643" 
+                        videoId="682685009" 
                         onClose={() => setOpenModal(false)} />
                     <ReactPlayer
                         playing={playVid[12]} 
@@ -270,7 +273,7 @@ const Videos = () => {
                         muted  
                         loop
                         className="d-block w-100" 
-                        url='https://vimeo.com/534212643' />
+                        url='https://vimeo.com/682685009' />
                     <button 
                         id='btn-overlay' 
                         onClick={()=> toggleModal(12)}
@@ -346,7 +349,7 @@ const Videos = () => {
                         channel='vimeo' 
                         autoplay='true' 
                         isOpen={openModal[16]} 
-                        videoId="553026464" 
+                        videoId="682685380" 
                         onClose={() => setOpenModal(false)} />
                     <ReactPlayer
                         playing={playVid[16]} 
@@ -354,11 +357,95 @@ const Videos = () => {
                         muted  
                         loop
                         className="d-block w-100" 
-                        url='https://vimeo.com/553026464' />
+                        url='https://vimeo.com/682685380' />
                     <button 
                         id='btn-overlay' 
                         onClick={()=> toggleModal(16)}
                         onMouseEnter={() => toggleVideo(16)} 
+                        onMouseLeave={() => setPlayVid(false)} >
+                    </button>
+                </div>
+                <div id='video1' >
+                    <ModalVideo 
+                        channel='vimeo' 
+                        autoplay='true' 
+                        isOpen={openModal[17]} 
+                        videoId="682685713" 
+                        onClose={() => setOpenModal(false)} />
+                    <ReactPlayer
+                        playing={playVid[17]} 
+                        controls='false' 
+                        muted  
+                        loop
+                        className="d-block w-100" 
+                        url='https://vimeo.com/682685713' />
+                    <button 
+                        id='btn-overlay' 
+                        onClick={()=> toggleModal(17)}
+                        onMouseEnter={() => toggleVideo(17)} 
+                        onMouseLeave={() => setPlayVid(false)} >
+                    </button>
+                </div>
+                <div id='video1' >
+                    <ModalVideo 
+                        channel='vimeo' 
+                        autoplay='true' 
+                        isOpen={openModal[18]} 
+                        videoId="682686153" 
+                        onClose={() => setOpenModal(false)} />
+                    <ReactPlayer
+                        playing={playVid[18]} 
+                        controls='false' 
+                        muted  
+                        loop
+                        className="d-block w-100" 
+                        url='https://vimeo.com/682686153' />
+                    <button 
+                        id='btn-overlay' 
+                        onClick={()=> toggleModal(18)}
+                        onMouseEnter={() => toggleVideo(18)} 
+                        onMouseLeave={() => setPlayVid(false)} >
+                    </button>
+                </div>
+                <div id='video1' >
+                    <ModalVideo 
+                        channel='vimeo' 
+                        autoplay='true' 
+                        isOpen={openModal[19]} 
+                        videoId="682686618" 
+                        onClose={() => setOpenModal(false)} />
+                    <ReactPlayer
+                        playing={playVid[19]} 
+                        controls='false' 
+                        muted  
+                        loop
+                        className="d-block w-100" 
+                        url='https://vimeo.com/682686618' />
+                    <button 
+                        id='btn-overlay' 
+                        onClick={()=> toggleModal(19)}
+                        onMouseEnter={() => toggleVideo(19)} 
+                        onMouseLeave={() => setPlayVid(false)} >
+                    </button>
+                </div>
+                <div id='video1' >
+                    <ModalVideo 
+                        channel='vimeo' 
+                        autoplay='true' 
+                        isOpen={openModal[20]} 
+                        videoId="682687709" 
+                        onClose={() => setOpenModal(false)} />
+                    <ReactPlayer
+                        playing={playVid[20]} 
+                        controls='false' 
+                        muted  
+                        loop
+                        className="d-block w-100" 
+                        url='https://vimeo.com/682687709' />
+                    <button 
+                        id='btn-overlay' 
+                        onClick={()=> toggleModal(20)}
+                        onMouseEnter={() => toggleVideo(20)} 
                         onMouseLeave={() => setPlayVid(false)} >
                     </button>
                 </div>

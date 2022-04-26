@@ -7,18 +7,18 @@
 .videos-box {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   margin: 5vh auto;
 }
 
 #video1 {
   background-color: #fee1ff;
-  box-shadow: -6px 0 0 0 #918fe6, 6px 0 0 0 #918fe6, 0 -6px 0 0 #918fe6, 0 6px 0 0 #918fe6;
+  box-shadow: -6px 0 0 0 rgb(145, 143, 230), 6px 0 0 0 rgb(145, 143, 230), 0 -6px 0 0 rgb(145, 143, 230), 0 6px 0 0 rgb(145, 143, 230);
   position: relative;
   text-align: center;
   padding: 0.5%;
-  margin: 1%;
+  margin: 25px;
   height: 460px !important;
   width: 260px !important;
 }
@@ -51,12 +51,12 @@
 
   #video1 {
     background-color: #fee1ff;
-    box-shadow: -6px 0 0 0 #918fe6, 6px 0 0 0 #918fe6, 0 -6px 0 0 #918fe6, 0 6px 0 0 #918fe6;
+    box-shadow: -6px 0 0 0 rgb(145, 143, 230), 6px 0 0 0 rgb(145, 143, 230), 0 -6px 0 0 rgb(145, 143, 230), 0 6px 0 0 rgb(145, 143, 230);
     position: relative;
     text-align: center;
     padding: 0%;
     margin: 5%;
-    height: 35vh !important;
-    width: 40vw !important;
+    max-height: 252px !important;
+    width: 35% !important;
   }
 }/*# sourceMappingURL=VideosStyle.css.map */

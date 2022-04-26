@@ -20,16 +20,16 @@
   margin: 5vh;
   padding: 2vh;
   text-align: center;
-  background-color: #fee1ff;
-  box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+  background-color: rgb(254, 225, 255);
+  box-shadow: -8px 0 0 0 rgb(145, 143, 230), 8px 0 0 0 rgb(145, 143, 230), 0 -8px 0 0 rgb(145, 143, 230), 0 8px 0 0 rgb(145, 143, 230);
 }
 
 .raver {
-  background: linear-gradient(#d8e7ff, #e2d5fa);
+  background: linear-gradient(rgb(216, 231, 255), rgb(226, 213, 250));
 }
 
 .goth {
-  background: linear-gradient(lightgray, #5c5c5c);
+  background: linear-gradient(rgb(211, 211, 211), rgb(92, 92, 92));
 }
 
 @media screen and (max-width: 768px) {
@@ -47,7 +47,7 @@
     margin: 5vh;
     padding: 0;
     text-align: center;
-    background-color: #fee1ff;
-    box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+    background-color: rgb(254, 225, 255);
+    box-shadow: -8px 0 0 0 rgb(145, 143, 230), 8px 0 0 0 rgb(145, 143, 230), 0 -8px 0 0 rgb(145, 143, 230), 0 8px 0 0 rgb(145, 143, 230);
   }
 }/*# sourceMappingURL=PinterestStyle.css.map */

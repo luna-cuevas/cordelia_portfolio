@@ -1,5 +1,6 @@
-import React, {  useEffect  } from 'react'
+import React, {  useEffect, Head  } from 'react'
 import './ProjectsStyle.css'
+import '../Videos/VideosStyle.css'
 import Carousel from 'react-bootstrap/Carousel'
 import ReactPlayer from 'react-player'
 import { Link } from 'react-router-dom'
@@ -25,6 +26,9 @@ const Projects = () => {
 
     return (
         <div id='projects' className='projects-container'>
+            <head>
+            <script async src="https://www.tiktok.com/embed.js"></script>
+            </head>
             <h1><img src={sailormoon2} alt="sailor moon heart gif"/>Content<img src={sailormoon2} alt="sailor moon heart gif"/></h1>
             <div className='projects-box'>
                 <div className='projects-text'>
@@ -49,41 +53,34 @@ const Projects = () => {
                 </div>
                 
             </div>
-            <div className='projects-box' style={{flexDirection: "row"}}>
-            <div className='projects-text'style={{width: "50%", margin: "0px"}}>
+            <div className='projects-box'>
+                <div className='projects-text'>
                     <h3>✿ Tik Toks ✿</h3>
                     <p>I got my introduction to the app while spearheading the Dolls Kill tik tok page. This included creating the account, reaching out to their first tik Tok influencers, working with well known creators, planning content, as well as finding the brand voice in the medium of 15 second videos & learning how to engage the costumer on the app. I have been mastering tik tok since October 2019 & would consider myself very well versed in creating clean content that focuses on product as well as contributes to current trends both in and out of the app.  </p>
-                    
                 </div>
-            <div className='projects-video'>
-                    <Carousel  fade='true' interval='20000' variant="dark">
-                        <Carousel.Item>
-                            <div>
-                                <ReactPlayer loop muted 
-                                height='100%'
-                                width='100%'
-                                className="video" url='https://vimeo.com/534226744' />
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div>
-                                <ReactPlayer loop muted
-                                height='100%'
-                                width='100%'  className="video" url='https://vimeo.com/553040181' />
-                            </div>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <div>
-                                <ReactPlayer loop muted
-                                height='100%'
-                                width='100%'  className='video' url='https://vimeo.com/534212538' />
-                            </div>
-                        </Carousel.Item>
-                    </Carousel>
-                    <Link to='/videos'>
+                <div className='projects-video'>
+                    <ReactPlayer 
+                        controls='false' 
+                        muted 
+                        loop
+                        className="video" 
+                        url='https://vimeo.com/682685713' />
+                    <ReactPlayer 
+                        controls='false' 
+                        muted 
+                        loop
+                        className="video" 
+                        url='https://vimeo.com/682686153' />
+                    <ReactPlayer 
+                        controls='false' 
+                        muted 
+                        loop
+                        className="video hide" 
+                        url='https://vimeo.com/682686618' />
+                </div> 
+                <Link to='/videos' className='button'>
                     <button>More Videos!</button>
-                    </Link>
-                </div>  
+                </Link>  
             </div>
         </div>
     )

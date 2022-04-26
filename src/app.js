@@ -27,7 +27,7 @@ function App() {
           </Route>
           <Route exact path='/videos' >
             <Videos />
-          </Route>
+          </Route>  
           <Route exact path='/pinterest' >
             <Pinterest />
           </Route>
