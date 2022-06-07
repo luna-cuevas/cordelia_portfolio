@@ -16,8 +16,8 @@
   width: 60%;
   height: auto;
   position: relative;
-  background-color: #fce8ff;
-  box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+  background-color: rgb(252, 232, 255);
+  box-shadow: -8px 0 0 0 rgb(145, 143, 230), 8px 0 0 0 rgb(145, 143, 230), 0 -8px 0 0 rgb(145, 143, 230), 0 8px 0 0 rgb(145, 143, 230);
   color: #fff;
   font-family: sans-serif;
   padding: 5vh 0 0 0;
@@ -80,8 +80,8 @@
     width: 80%;
     height: auto;
     position: relative;
-    background-color: #fce8ff;
-    box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+    background-color: rgb(252, 232, 255);
+    box-shadow: -8px 0 0 0 rgb(145, 143, 230), 8px 0 0 0 rgb(145, 143, 230), 0 -8px 0 0 rgb(145, 143, 230), 0 8px 0 0 rgb(145, 143, 230);
     color: #fff;
     font-family: sans-serif;
     padding: 5vh 0 0 0;

@@ -24,9 +24,9 @@
   width: 60%;
   margin: auto;
   padding: 3vw;
-  color: #4d4d4d;
-  background-color: #fce8ff;
-  box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+  color: rgb(77, 77, 77);
+  background-color: rgb(252, 232, 255);
+  box-shadow: -8px 0 0 0 rgb(145, 143, 230), 8px 0 0 0 rgb(145, 143, 230), 0 -8px 0 0 rgb(145, 143, 230), 0 8px 0 0 rgb(145, 143, 230);
 }
 
 .summary {
@@ -50,7 +50,7 @@
 .skills {
   max-width: 50%;
   margin: auto;
-  border-left: 2px solid #918fe6;
+  border-left: 2px solid rgb(145, 143, 230);
 }
 
 .skills-box {
@@ -107,9 +107,9 @@
     width: 80%;
     margin: auto;
     padding: 3vw;
-    color: #4d4d4d;
-    background-color: #fce8ff;
-    box-shadow: -8px 0 0 0 #918fe6, 8px 0 0 0 #918fe6, 0 -8px 0 0 #918fe6, 0 8px 0 0 #918fe6;
+    color: rgb(77, 77, 77);
+    background-color: rgb(252, 232, 255);
+    box-shadow: -8px 0 0 0 rgb(145, 143, 230), 8px 0 0 0 rgb(145, 143, 230), 0 -8px 0 0 rgb(145, 143, 230), 0 8px 0 0 rgb(145, 143, 230);
   }
 
   .summary {
@@ -133,7 +133,7 @@
   .skills {
     max-width: 100%;
     margin: auto;
-    border-top: 4px solid #918fe6;
+    border-top: 4px solid rgb(145, 143, 230);
     border-left: 0;
   }
 

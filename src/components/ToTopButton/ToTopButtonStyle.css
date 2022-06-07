@@ -3,7 +3,7 @@
   width: 3vw;
   cursor: pointer !important;
   position: fixed;
-  right: 10vw;
+  right: 15px;
   bottom: 10vh;
   transform: translate(0, 0);
 }
@@ -16,6 +16,6 @@
   .svg {
     width: 7vw;
     bottom: 10vh;
-    right: 0.5vw;
+    right: 10px;
   }
 }/*# sourceMappingURL=ToTopButtonStyle.css.map */

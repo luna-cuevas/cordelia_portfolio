@@ -23,6 +23,7 @@
 .projects-box {
   position: relative;
   display: flex;
+  flex-direction: column;
   width: 60% !important;
   height: auto;
   margin: 5vh auto;
@@ -33,13 +34,20 @@
 }
 
 .projects-text {
-  width: 50%;
+  width: 90%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   h3 {
     text-align: center;
   }
+}
+
+.pinterest-boards {
+  display: flex;
+  width: auto;
+  height: auto;
+  gap: 30px;
 }
 
 .projects-pinterest {
@@ -49,13 +57,12 @@
   text-align: center;
   justify-content: center;
   gap: 2vh;
-  width: 35% !important;
-  margin: 2vh auto;
+  width: 50% !important;
   padding: 2vh;
   height: 100%;
-  background-color: rgb(254, 225, 255);
-  box-shadow: -4px 0 0 0 rgb(145, 143, 230), 4px 0 0 0 rgb(145, 143, 230),
-    0 -4px 0 0 rgb(145, 143, 230), 0 4px 0 0 rgb(145, 143, 230);
+  background-color: rgb(254, 213, 255);
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgb(251, 187, 252);
 
   h3 {
     margin: 0;
@@ -64,40 +71,19 @@
 }
 
 .projects-video {
-  width: 30% !important;
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   margin: auto;
   justify-content: center;
-  gap: 2vh;
-  padding: 2vh !important;
-  background-color: rgb(254, 225, 255);
-  box-shadow: -4px 0 0 0 rgb(145, 143, 230), 4px 0 0 0 rgb(145, 143, 230),
-    0 -4px 0 0 rgb(145, 143, 230), 0 4px 0 0 rgb(145, 143, 230);
-  h3 {
-    margin: 0;
-    padding: 0%;
-  }
 }
 
 .video {
-  margin: auto !important;
-  width: 100% !important;
-  height: 50vh !important;
-  padding: 2vh auto !important;
+  width: auto !important;
+  height: 400px !important;
 }
-
-.carousel-indicators {
-  display: none !important;
-}
-
-.carousel-control-prev {
-  left: -20% !important;
-}
-.carousel-control-next {
-  right: -20% !important;
+.button {
+  margin: 20px auto 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -169,40 +155,24 @@
       padding: 0%;
     }
   }
-
-  .projects-video {
-    width: 90% !important;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-    justify-content: center;
-    gap: 2vh;
-    padding: 2vh !important;
-    background-color: none;
-    box-shadow: none;
-    h3 {
-      margin: 0;
-      padding: 0%;
-    }
+  .pinterest-boards {
+    display: flex !important;
+    flex-direction: column !important;
   }
 
   .video {
-    margin: auto !important;
-    width: 100% !important;
-    height: 50vh !important;
-    padding: 2vh auto !important;
+    width: auto !important;
+    height: 300px !important;
+    margin: 2vw;
   }
-
-  .carousel-indicators {
+  .projects-video {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+  }
+  .hide {
     display: none !important;
-  }
-
-  .carousel-control-prev {
-    left: -18% !important;
-  }
-  .carousel-control-next {
-    right: -18% !important;
   }
 }
