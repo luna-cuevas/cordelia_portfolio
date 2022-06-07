@@ -4,4 +4,4 @@ Some of the challenges that I identified were how to present all her creative wo
 
 Overall, the client is happy with the design. This version 2 feels sleeker, cleaner, much more responsive, and more on brand for the client. Future features may include more motion or gifs. 
 
-You can see a live demonstration here: https://brooke-cordelia.com/
+You can see a live demonstration here: https://brookecordelia.com/
