@@ -1,7 +1,23 @@
-This portfolio was designed for a professional roller skater and content creator. The client requested that the website include 70s and 80s colors and letter, along with adding elements of video games, and Sailor Moon. 
+# Next.js + Tailwind CSS Example
 
-Some of the challenges that I identified were how to present all her creative work. The client has a large collection of video content across Instagram and Tik Tok. And unfortunately, Tik Tok's embed feature does not allow for much stylistic change. The solution was to create a vimeo account and upload the content there so that I can then inject the video link into a Video component I made to display the content on the page. Future refactoring will need to include ways to embed the original Tik Tok video in order to display accurate Likes, Comments, and Shares. 
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-Overall, the client is happy with the design. This version 2 feels sleeker, cleaner, much more responsive, and more on brand for the client. Future features may include more motion or gifs. 
+## Deploy your own
 
-You can see a live demonstration here: https://brooke-cordelia.com/
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+
+## How to use
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
+# or
+pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+```
+
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
