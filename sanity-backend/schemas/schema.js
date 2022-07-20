@@ -3,10 +3,18 @@ import createSchema from "part:@sanity/base/schema-creator";
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
-import animals from "./animals";
+import tiktokHighlights from "./tiktok-highlights";
+import pinteresHighlights from "./pinterest-highlights";
+import pinterestBoards from "./pinterestBoards";
+import tiktokVideos from "./tiktokVideos";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: "default",
-  types: schemaTypes.concat([animals]),
+  types: schemaTypes.concat([
+    tiktokHighlights,
+    pinteresHighlights,
+    pinterestBoards,
+    tiktokVideos,
+  ]),
 });
