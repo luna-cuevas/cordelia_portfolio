@@ -15,8 +15,8 @@ export default {
     },
     {
       name: "url",
-      type: "url",
-      title: "url",
+      type: "text",
+      title: "VimeoURL",
     },
   ],
 };
