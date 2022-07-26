@@ -7,6 +7,7 @@ import tiktokHighlights from "./tiktok-highlights";
 import pinteresHighlights from "./pinterest-highlights";
 import pinterestBoards from "./pinterestBoards";
 import tiktokVideos from "./tiktokVideos";
+import visuals from "./visuals";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -16,5 +17,6 @@ export default createSchema({
     pinteresHighlights,
     pinterestBoards,
     tiktokVideos,
+    visuals,
   ]),
 });

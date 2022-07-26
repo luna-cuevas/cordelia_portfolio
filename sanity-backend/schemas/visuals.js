@@ -1,7 +1,7 @@
 export default {
-  name: "tiktokVideos",
+  name: "visuals",
   type: "document",
-  title: "Tik Tok Videos",
+  title: "Visuals",
   fields: [
     {
       name: "title",
@@ -9,9 +9,9 @@ export default {
       title: "title",
     },
     {
-      name: "url",
-      type: "text",
-      title: "VimeoURL",
+      name: "image",
+      type: "image",
+      title: "image",
     },
     {
       name: "myTags",

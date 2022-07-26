@@ -13,7 +13,8 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "dark-mode",
-    "order-documents"
+    "order-documents",
+    "tags"
   ],
   "env": {
     "development": {

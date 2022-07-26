@@ -9,6 +9,11 @@ export default {
       title: "title",
     },
     {
+      name: "category",
+      type: "string",
+      title: "category",
+    },
+    {
       name: "tiktokId",
       type: "file",
       title: "Tik Tok Video",
