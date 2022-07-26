@@ -19,8 +19,9 @@ const NavBar = () => {
       </div>  
       <div id="menu" className={`font-normal z-50 md:opacity-100 md:max-h-96 text-3xl text-black md:w-fit md:visible gap-4 md:gap-8 md:flex text-right mr-0 pr-3 flex-col md:flex-row md:py-2 md:pb-4 sm:py-0 sm:pb-0 w-screen border-r-2 md:border-r-0 border-gray-200 transition-all flex duration-500 ${isOpen ? 'invisible max-h-0 my-0 opacity-0' : 'visible max-h-96 my-12'}`}>
         <h2 className='hover:underline underline-offset-4'><Link href='/'>Home</Link></h2>
-        <h2 className='hover:underline underline-offset-4'><Link href='/projects'>Pinterest Boards</Link></h2>
-        <h2 className='hover:underline underline-offset-4'><Link href='/about'>Tik Toks</Link></h2>
+        <h2 className='hover:underline underline-offset-4'><Link href='/pinterest'>Pinterest</Link></h2>
+        <h2 className='hover:underline underline-offset-4'><Link href='/tiktoks'>Tik Toks</Link></h2>
+        <h2 className='hover:underline underline-offset-4'><Link href='/visuals'>Visuals</Link></h2>
         <h2 className='hover:underline underline-offset-4'><Link href='/contact'>Contact</Link></h2>
       </div>
     </nav>

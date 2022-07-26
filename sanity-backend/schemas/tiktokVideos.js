@@ -14,6 +14,16 @@ export default {
       title: "VimeoURL",
     },
     {
+      name: "myTags",
+      title: "Tags",
+      type: "tags",
+      options: {
+        includeFromRelated: "myTags",
+        customLabel: "cutomLabel",
+        includeFromRelated: "category",
+      },
+    },
+    {
       name: "order",
       title: "Order",
       type: "number",

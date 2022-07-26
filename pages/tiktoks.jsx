@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { 
   Navigation, 
   Pagination, 
@@ -15,6 +15,14 @@ import Modal from '../components/Modal';
 
 
 const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
+
+  const [data, setTikToks] = useState([]);
+  const [dataHighlights, setTikTokHighlights] = useState([]);
+
+  useEffect(() => {
+    setTikToks(tiktoks);
+    setTikTokHighlights(tiktokHighlights);
+  }, []);
 
   const windowWidth = useWidth();
 
@@ -38,10 +46,10 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
           className="mySwiper w-screen max-w-[1000px] flex-wrap mx-auto"
           pagination={{ clickable: true }}
         >
-          {tiktokHighlights.map((video, id) => (
+          {dataHighlights.map((video, id) => (
             <SwiperSlide className='flex flex-col w-full py-8 m-auto' key={id}>
-              <iframe className='h-[400px] w-full m-auto' src={video.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-              <button>Test</button>
+              <iframe className='h-[500px] md:h-[400px] w-full m-auto' src={video.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <button className='w-1/2 m-auto mt-4 rounded-xl py-2 bg-[#f6b5f6]'>{video.category}</button>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -49,7 +57,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
         <div className='columns-4 flex flex-wrap'>
           {tiktoks.map((video, id) => (
             <div className='m-auto my-4' key={id}>
-              <iframe className='h-[400px] w-full m-auto' src={video.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <iframe className='md:h-[400px] h-screen md:w-full w-screen m-auto' src={video.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
               {/* <Modal video={video} id={id} /> */}
             </div>
           ))}
