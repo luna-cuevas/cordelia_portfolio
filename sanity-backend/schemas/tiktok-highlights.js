@@ -18,5 +18,11 @@ export default {
       type: "text",
       title: "VimeoURL",
     },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
 };

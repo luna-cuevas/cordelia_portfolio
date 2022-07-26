@@ -13,5 +13,11 @@ export default {
       type: "url",
       title: "url",
     },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
 };

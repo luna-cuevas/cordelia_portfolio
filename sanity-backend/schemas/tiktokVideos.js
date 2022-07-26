@@ -9,14 +9,15 @@ export default {
       title: "title",
     },
     {
-      name: "tiktokId",
-      type: "file",
-      title: "Tik Tok Video",
+      name: "url",
+      type: "text",
+      title: "VimeoURL",
     },
     {
-      name: "url",
-      type: "url",
-      title: "url",
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
     },
   ],
 };

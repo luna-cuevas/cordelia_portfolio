@@ -5,7 +5,7 @@ const NavBar = () => {
   const [isOpen, setIsOpen] = useState(true)
 
   return (
-    <nav id="site-menu" className="md:absolute max-h-96 z-50 flex flex-wrap justify-end w-screen pt-6 pl-12 pr-8">  
+    <nav id="site-menu" className="md:absolute max-h-96 top-0 z-50 flex flex-wrap justify-end w-screen pt-6 pl-12 pr-8">  
       <div className='h-fit w-fit relative flex'> 
         <div className="w-fit sm:w-auto sm:self-center z-100 sm:flex-none flex flex-col flex-no-wrap items-center self-start justify-between">
           <a>
