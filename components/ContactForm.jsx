@@ -38,27 +38,27 @@ const ContactForm = () => {
   return (
     <div className='h-fit overflow-hidden'>
       <div className='flex flex-col mt-10'>
-        <h1 className='md:text-3xl m-auto mb-2 text-2xl text-white'>Contact Us</h1>
+        <h1 className='md:text-3xl m-auto mb-2 text-2xl text-black'>Contact Me :)</h1>
         <div className="w-5/6 pb-4 md:max-w-[700px] mx-auto">
-          <div className="rounded-xl sm:rounded-md p-6 bg-gray-800 border border-gray-600">
+          <div className="rounded-xl sm:rounded-md p-6 bg-[#fce8ff] border-4 border-[#918fe6]">
             <form ref={form} onSubmit={submit}>
               <label className="block mb-6">
-                <span className="text-gray-300">Your name</span>
+                <span className="text-black">Your name</span>
                 <input
                   name="name"
                   type="text"
-                  className="focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block w-full p-2 mt-1 text-gray-300 placeholder-gray-600 bg-transparent border-2 border-gray-600 rounded-md shadow-sm"
+                  className="focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block w-full p-2 mt-1 text-gray-300 placeholder-[#ababab] bg-transparent border-2 border-[#918fe6] rounded-md shadow-sm"
                   placeholder="Joe Bloggs"
                   value={name}
                   onChange={e => setName(e.target.value)}
                 />
               </label>
               <label className="block mb-6">
-                <span className="text-gray-300">Email address</span>
+                <span className="text-black">Email address</span>
                 <input
                   name="email"
                   type="email"
-                  className=" focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block w-full p-2 mt-1 text-gray-300 placeholder-gray-600 bg-transparent border-2 border-gray-600 rounded-md shadow-sm"
+                  className=" focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 block w-full p-2 mt-1 text-gray-300 placeholder-[#ababab] bg-transparent border-2 border-[#918fe6] rounded-md shadow-sm"
                   placeholder="joe.bloggs@example.com"
                   required
                   value={email}
@@ -66,10 +66,10 @@ const ContactForm = () => {
                 />
               </label>
               <label className="block mb-6">
-                <span className="text-gray-300">Message</span>
+                <span className="text-black">Message</span>
                 <textarea
                   name="message"
-                  className="md:h-[200px] p-2 border-2 block w-full mt-1 border-gray-600 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-transparent placeholder-gray-600 text-gray-300 "
+                  className="md:h-[200px] p-2 border-2 block w-full mt-1 border-[#918fe6] rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 bg-transparent placeholder-[#ababab] text-gray-300 "
                   rows="3"
                   placeholder="Tell us what you're thinking about..."
                   value={message}
@@ -80,8 +80,8 @@ const ContactForm = () => {
                 <button
                   type="submit"
                   value='Send'
-                  className=" focus:shadow-outline hover:bg-indigo-800 h-10 px-5 m-auto text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg">
-                    Contact Us
+                  className=" focus:shadow-outline hover:bg-[#6665b2] h-10 px-5 m-auto text-black transition-colors duration-150 bg-[#918fe6] rounded-lg">
+                    Send
                 </button>
               </div>
             </form>

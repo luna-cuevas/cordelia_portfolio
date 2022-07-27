@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "deeppink-sparrow"
+    "name": "cordelia-backend"
   },
   "api": {
     "projectId": "hzsfgp4u",
@@ -12,7 +12,6 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "dark-mode",
     "order-documents",
     "tags"
   ],

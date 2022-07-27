@@ -14,14 +14,19 @@ export default {
       title: "category",
     },
     {
-      name: "tiktokId",
+      name: "video",
       type: "file",
-      title: "Tik Tok Video",
+      title: "videoUpload",
     },
     {
-      name: "url",
-      type: "text",
-      title: "VimeoURL",
+      name: "myTags",
+      title: "Tags",
+      type: "tags",
+      options: {
+        includeFromRelated: "myTags",
+        customLabel: "cutomLabel",
+        includeFromRelated: "category",
+      },
     },
     {
       name: "order",

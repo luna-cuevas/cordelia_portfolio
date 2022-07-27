@@ -9,9 +9,9 @@ export default {
       title: "title",
     },
     {
-      name: "url",
-      type: "text",
-      title: "VimeoURL",
+      name: "video",
+      type: "file",
+      title: "videoUpload",
     },
     {
       name: "myTags",

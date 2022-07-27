@@ -1,5 +1,5 @@
 {
-  "name": "deeppink-sparrow",
+  "name": "cordelia-backed",
   "private": true,
   "version": "1.0.0",
   "description": "This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs)",
@@ -25,7 +25,6 @@
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
-    "sanity-plugin-dark-mode": "^0.0.33",
     "sanity-plugin-order-documents": "^0.0.23",
     "sanity-plugin-tags": "^1.5.0",
     "styled-components": "^5.2.0"

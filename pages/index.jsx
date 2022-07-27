@@ -19,7 +19,7 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
   const windowWidth = useWidth();
 
   return (
-    <div className='flex flex-col max-w-[1400px]'>
+    <div className='flex flex-col m-auto max-w-[1400px]'>
       {/* Hero */}
       <div className='flex min-h-screen m-auto'>
         <div className='m-auto'>
@@ -89,13 +89,13 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
             pagination={{ clickable: true }}
           >
             {tiktokHighlights.map((highlight, id) => (
-              <SwiperSlide className='flex w-full py-8 m-auto' key={id}>
-                <iframe className='h-[400px] w-full m-auto' src={highlight.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <SwiperSlide className='flex w-full px-4 py-8 m-auto' key={id}>
+              <video className='md:w-full w-3/4 m-auto' controls src={highlight.videoUpload}></video>
               </SwiperSlide>
             ))}
           </Swiper>
           <p className='w-5/6 m-auto my-5 text-xl font-light'>I got my introduction to the app while spearheading the Dolls Kill tik tok page. This included creating the account, reaching out to their first tik Tok influencers, working with well known creators, planning content, as well as finding the brand voice in the medium of 15 second videos & learning how to engage the costumer on the app. I have been mastering tik tok since October 2019 & would consider myself very well versed in creating clean content that focuses on product as well as contributes to current trends both in and out of the app.</p>
-          <button className='w-fit m-auto text-center' id='bn30'>
+          <button className='w-fit px-4 m-auto bg-[#e781e7] text-3xl text-center border-2 border-black' >
             <Link href='/tiktoks'>See more</Link>
           </button>
         </div>
@@ -121,7 +121,7 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
 export default Home
 
 export const getServerSideProps = async () => {
-  const tiktokHighlights = await client.fetch('*[_type == "tiktok-highlights"]');
+  const tiktokHighlights = await client.fetch('*[_type == "tiktok-highlights"]{category, "videoUpload": video.asset->url}');
   const pinterestHighlights = await client.fetch('*[_type == "pinterest-highlights"]');
   return {
     props:{ tiktokHighlights, pinterestHighlights }
