@@ -7,6 +7,7 @@
   src: url('/fonts/groovin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: fallback;
 }
 
 /* html {
@@ -29,13 +30,13 @@
   position: absolute;
   width: 30px;
   height: 4px;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   transform: rotate(0);
   transition: all 0.3s;
 }
 
 .hamburger:hover [class*="-bun"] {
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
 }
 
 .hamburger__top-bun {

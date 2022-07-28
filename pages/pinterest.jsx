@@ -15,7 +15,6 @@ const pinterest = ( { boards } ) => {
           </div>
         ))}
       </div>
-      <Script async defer src="//assets.pinterest.com/js/pinit.js"></Script>
     </div>
   )
 }

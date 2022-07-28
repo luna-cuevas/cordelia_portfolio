@@ -20,7 +20,7 @@ export default {
       options: {
         includeFromRelated: "myTags",
         customLabel: "cutomLabel",
-        includeFromRelated: "category",
+        includeFromReference: "category",
       },
     },
     {

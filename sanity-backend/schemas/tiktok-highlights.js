@@ -9,11 +9,6 @@ export default {
       title: "title",
     },
     {
-      name: "category",
-      type: "string",
-      title: "category",
-    },
-    {
       name: "video",
       type: "file",
       title: "videoUpload",
@@ -25,7 +20,7 @@ export default {
       options: {
         includeFromRelated: "myTags",
         customLabel: "cutomLabel",
-        includeFromRelated: "category",
+        includeFromReference: "category",
       },
     },
     {
