@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST={"_app.jsx -> flowbite":{"id":"_app.jsx -> flowbite","files":["static/chunks/node_modules_flowbite_dist_flowbite_js.js"]}}
