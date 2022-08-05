@@ -13,8 +13,8 @@ const ContactForm = () => {
     e.preventDefault();
     if (name && email && message) {
 
-        const serviceId = 'service_neh1oii';
-        const templateId = 'template_vdw3ffh';
+        const serviceId = 'service_k6uxc8l';
+        const templateId = 'template_463e375';
         const userId = 'user_JcD1331LVSdIeKGHTgDqA';
         const templateParams = { name, email, message };
 
