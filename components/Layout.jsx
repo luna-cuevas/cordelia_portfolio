@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import NavBar from './NavBar'
+import Footer from './Footer'
 
 const Layout = ({children}) => {
   return (
@@ -15,6 +16,7 @@ const Layout = ({children}) => {
       <main className='md:mt-32 w-screen mt-16'>
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

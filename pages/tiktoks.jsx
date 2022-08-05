@@ -49,7 +49,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
 
   return (
     <div className='flex flex-col max-w-[1200px] m-auto min-h-screen'>
-      <div className='flex flex-col m-auto'>
+      <div className='flex w-full flex-col m-auto'>
         <h1 className='m-auto text-3xl font-["Lobster_Two"]'>Top Categories</h1>
         <Swiper
           modules={[ 
@@ -83,7 +83,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
           ))}
         </Swiper>
         <h1 className='m-auto my-10 text-3xl font-["Lobster_Two"]'> {capitalizeFirstLetter(tagFilter)} Videos</h1>
-        <div className='flex justify-center gap-4 pb-4 text-lg border-b-2 border-gray-300'>
+        <div className='flex flex-wrap justify-center gap-4 pb-4 text-lg border-b-2 border-gray-300'>
           <button className='bg-[#f3b0e3] rounded-xl px-3 py-[2px] focus:outline-4 focus:outline focus:outline-[#f89feb]' onClick={(() => setTagFilter('All'))}>All</button>
           {filteredTags.map((tag, index) => (
             <button className='bg-[#7e7eff] focus:outline-4 focus:outline focus:outline-[#f89feb] rounded-xl px-3 py-[2px] text-white' onClick={(() => setTagFilter(tag))} key={index}>{capitalizeFirstLetter(tag)}</button>

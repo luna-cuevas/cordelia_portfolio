@@ -81,7 +81,7 @@ const ContactForm = () => {
                 </button>
               </div>
             </form>
-            <span className={emailSent ? 'visible text-white' : 'hidden'}>Thank you for your message, we will be in touch in no time!</span>
+            <span className={`${emailSent ? 'visible text-white ' : 'hidden'} animate-bounce transition-all duration-300 m-auto justify-center text-center text-2xl flex`}>Thank you for your message, we will be in touch in no time!</span>
           </div>
         </div>
       </div>

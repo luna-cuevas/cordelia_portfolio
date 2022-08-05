@@ -12,7 +12,7 @@ const ImageModal = ({openModal,setOpenModal, modalState, setModalState}) => {
             <span className="sr-only">Close modal</span>
           </button>
           <div className="flex pt-10 text-center">
-            <img className='' src={openModal}></img>
+            <img className='md:max-h-[800px] cursor-grab h-2/3 m-auto' src={openModal}></img>
           </div>
         </div>
       </div>      
