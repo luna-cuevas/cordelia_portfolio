@@ -1,3 +1,6 @@
+import Link from 'next/link';
+import { useWidth } from '../lib/windowWidth';
+import { useEffect, useState } from 'react';
 import { client } from '../lib/client'
 import ContactForm from '../components/ContactForm'
 // Import Third Party Components
@@ -11,11 +14,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import Link from 'next/link';
-import Script from 'next/script';
-import { useWidth } from '../lib/windowWidth';
-import Head from 'next/head';
-import { useEffect, useState } from 'react';
 
 const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
   const windowWidth = useWidth();
