@@ -70,7 +70,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
           {dataHighlights.map((video, id) => (
             <SwiperSlide className='flex flex-col px-4 py-8 m-auto' key={id}>
               <div className='relative'>
-                <video className='md:w-full max-h-[400px] w-3/4 h-full m-auto' controls src={video.videoUpload}></video>
+                <video preload="metadata" className='md:w-full max-h-[400px] w-3/4 h-full m-auto' controls src={video.videoUpload + '#t=0.5'}></video>
                 <button onClick={() => {setModalState(true); setOpenModal(video.videoUpload);}} className=" absolute top-0 bottom-0 left-0 right-0 block w-full h-full bg-transparent" type="button" ></button>
               </div>
               {/* <iframe className='h-[500px] md:h-[400px] w-full m-auto' src={video.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> */}
@@ -93,7 +93,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
           {tagFilter !== 'All' ? 
             data.filter(tiktok => tiktok.myTags?.map((tag) => tag.value).includes(tagFilter)).map((video, id) => (
               <div className='md:w-1/4 h-fit relative flex flex-col justify-center w-1/2 px-4 m-auto my-4' key={id}>
-                <video className='border-4 border-[#918fe6] max-h-[250px] md:max-h-full h-auto p-2 bg-[#fee1ff] m-auto' controls src={video.videoUpload}></video>
+                <video preload="metadata" className='border-4 border-[#918fe6] max-h-[250px] md:max-h-full h-auto p-2 bg-[#fee1ff] m-auto' controls src={video.videoUpload + '#t=0.5'}></video>
                 <button onClick={() => {setModalState(true); setOpenModal(video.videoUpload);}} className="focus:ring-4 focus:outline-none absolute top-0 bottom-0 left-0 right-0 block w-full h-full text-sm font-medium text-center bg-transparent rounded-lg" type="button" >
                 </button>
               </div>
@@ -101,7 +101,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
             :
             data.map((video, id) => (
               <div className='md:w-1/4 relative flex flex-col justify-center w-1/2 px-4 m-auto my-4' key={id}>
-                <video className='border-4 border-[#918fe6] max-h-[300px] md:max-h-full h-full p-2 bg-[#fee1ff] m-auto' controls src={video.videoUpload}></video>
+                <video preload="metadata" className='border-4 border-[#918fe6] max-h-[300px] md:max-h-full h-full p-2 bg-[#fee1ff] m-auto' controls src={video.videoUpload + '#t=0.5'}></video>
                 <button onClick={() => {setModalState(true); setOpenModal(video.videoUpload);}} className="focus:ring-4 focus:outline-none absolute top-0 bottom-0 left-0 right-0 block w-full h-full text-sm font-medium text-center bg-transparent rounded-lg" type="button" >
                 </button>
               </div>

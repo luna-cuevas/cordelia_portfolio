@@ -100,7 +100,7 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
             {dataHighlights.map((highlight, id) => (
               <SwiperSlide className='flex w-full px-4 py-8 m-auto' key={id}>
                 <div>
-                  <video className='md:w-full max-h-[800px] h-auto w-3/4 m-auto' controls src={highlight.videoUpload}></video>
+                  <video preload="metadata" className='md:w-full max-h-[800px] h-auto w-3/4 m-auto' controls src={highlight.videoUpload + '#t=0.5'}></video>
                 </div>
               </SwiperSlide>
             ))}
