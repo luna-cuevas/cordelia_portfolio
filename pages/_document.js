@@ -15,7 +15,6 @@ export default function Document() {
           content="This is a collection of my previous work and projects."
         />
         <meta property="og:title" content="Cordelia's Portfolio" />
-        <title>Cordelia's Portfolio</title>
       </Head>
       <body>
         <Main />
