@@ -28,9 +28,9 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
       {/* Hero */}
       <div className='relative flex flex-wrap min-h-screen m-auto'>
         <div className='h-fit w-fit absolute -top-[60vh] bottom-0 left-0 right-0 flex m-auto'>
-          <img className='w-[80px] h-fit' src="/images/flower2.gif" alt="" />
-          <img className='w-[80px] h-fit' src="/images/sailormoonheart.gif" alt="" />
-          <img className='w-[80px] h-fit' src="/images/flower2.gif" alt="" />
+          <img className='w-[80px] max-h-[80px] h-auto' src="/images/flower2.gif" alt="" />
+          <img className='w-[80px] max-h-[80px] h-auto' src="/images/sailormoonheart.gif" alt="" />
+          <img className='w-[80px] max-h-[80px] h-auto' src="/images/flower2.gif" alt="" />
         </div>
         <div className='flex flex-col w-full px-4 m-auto'>
           <h1 className='md:text-8xl text-6xl text-center m-auto text-[#918fe6] font-["Groovin"]'>Brooke Cordelia Harvey</h1>
@@ -60,7 +60,7 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
           </div>
           <div className='justify-evenly md:flex-row flex flex-col w-full my-4'>
             <div className='md:w-1/3 py-2 px-5 bg-[#ddd3ff] '>
-              <img className='rounded-2xl h-fit md:w-10/12 md:float-none float-left w-5/12 px-3 mx-auto my-4' src="/images/aesthetic.jpg" alt="" />
+              <img className='rounded-2xl md:w-10/12 md:float-none float-left w-5/12 px-3 mx-auto my-4' src="/images/aesthetic.jpg" alt="" />
               <h2 className=' md:text-2xl mb-2 text-lg text-center font-["Lobster_Two"]'>Aesthetics</h2>
               <p className=' text-sm font-light'>Using knowledge of different aesthetics to make products look appealing to a wide audience. Whatever your brand is, I got you! I have been an avid Pinterest and tumblr user for 10 years and know exactly how to curate a vision no matter what you’re customers vibe is.</p>
             </div>
@@ -100,7 +100,7 @@ const Home = ( { tiktokHighlights, pinterestHighlights } ) => {
             {dataHighlights.map((highlight, id) => (
               <SwiperSlide className='flex w-full px-4 py-8 m-auto' key={id}>
                 <div>
-                  <video className='md:w-full w-3/4 m-auto' controls src={highlight.videoUpload}></video>
+                  <video className='md:w-full max-h-[800px] h-auto w-3/4 m-auto' controls src={highlight.videoUpload}></video>
                 </div>
               </SwiperSlide>
             ))}
