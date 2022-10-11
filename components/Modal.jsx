@@ -10,7 +10,7 @@ const Modal = ( { openModal, setOpenModal, modalState, setModalState } ) => {
       vidRef.current.pause();
     } else {
       console.log('playing');
-      vidRef.current.play();
+      vidRef.current.play();  
     }
   }
   return (

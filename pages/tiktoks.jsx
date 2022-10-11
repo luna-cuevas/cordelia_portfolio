@@ -75,7 +75,7 @@ const tiktoks = ( { tiktoks, tiktokHighlights } ) => {
               </div>
               {/* <iframe className='h-[500px] md:h-[400px] w-full m-auto' src={video.url.match(/(https?:\/\/[^ ]*)/)} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> */}
               <div className='md:w-full flex flex-wrap w-8/12 m-auto'>
-                {video.myTags.slice(0,4).map((tag, id) => (
+                {video.myTags?.slice(0,4).map((tag, id) => (
                   <button onClick={(() => setTagFilter(tag.value))} key={id} className='text-base font-light m-auto mt-4 px-3 rounded-xl py-[2px] bg-[#f6b5f6]'>{capitalizeFirstLetter(tag.value)}</button>
                 ))}
               </div>
